@@ -53,7 +53,7 @@ router.put("/:id", (req, res) => {
       if (!dbCategoryInput) {
         res.status(404).json({ message: "Category not found" });
       }
-      res.json(dbcategoryInput);
+      res.json(dbCategoryInput);
     })
     .catch((err) => {
       console.log(err);
